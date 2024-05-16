@@ -1,0 +1,60 @@
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+  <!-- Formulário principal com formGroup e ação de submissão -->
+  <div class="form-group">
+    <!-- Campo para o nome completo -->
+    <label for="nomeCompleto">Nome Completo:</label><br>
+    <input type="text" class="form-control" id="nomeCompleto" formControlName="nomeCompleto">
+
+    <!-- Campo para a data de nascimento -->
+    <label for="dataNascimento">Data de Nascimento:</label><br>
+    <input type="date" class="form-control" id="dataNascimento" formControlName="dataNascimento">
+
+    <!-- Campo para o CPF -->
+    <label for="cpf">CPF:</label><br>
+    <input type="text" class="form-control" id="cpf" formControlName="cpf">
+
+    <!-- Campo para o e-mail -->
+    <label for="email">E-mail:</label><br>
+    <input type="email" class="form-control" id="email" formControlName="email">
+
+    <!-- Campo para o telefone -->
+    <label for="telefone">Telefone:</label><br>
+    <input type="tel" class="form-control" id="telefone" formControlName="telefone">
+
+    <!-- Campo para o CEP com ação de consulta ao sair do campo (blur) -->
+    <label for="cep">CEP:</label><br>
+    <input type="text" class="form-control" id="cep" formControlName="cep" (blur)="consultaCep($event)" />
+
+    <!-- Divisão para os campos de logradouro e bairro -->
+    <div class="form-row">
+      <div class="col">
+        <!-- Campo para o logradouro (rua) -->
+        <label for="logradouro">Logradouro:</label><br>
+        <input type="text" class="form-control" id="logradouro" formControlName="logradouro" [readonly]="true">
+      </div>
+      <div class="col">
+        <!-- Campo para o bairro -->
+        <label for="bairro">Bairro:</label><br>
+        <input type="text" class="form-control" id="bairro" formControlName="bairro" [readonly]="true">
+      </div>
+    </div>
+
+    <!-- Divisão para os campos de cidade e UF (estado) -->
+    <div class="form-row">
+      <div class="col">
+        <!-- Campo para a cidade -->
+        <label for="cidade">Cidade:</label><br>
+        <input type="text" class="form-control" id="cidade" formControlName="cidade" [readonly]="true">
+      </div>
+      <div class="col">
+        <!-- Campo para o UF (estado) -->
+        <label for="uf">UF:</label><br>
+        <input type="text" class="form-control" id="uf" formControlName="uf" [readonly]="true">
+      </div>
+    </div>
+
+    <!-- Botão de enviar o formulário -->
+    <br><br>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </div>
+</form>
