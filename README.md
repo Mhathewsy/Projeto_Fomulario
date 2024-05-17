@@ -22,7 +22,7 @@ Navegador Web: Um navegador web compatível, como Google Chrome ou Mozilla Firef
 
 Instalação
 Clone o repositório do projeto em sua máquina local: 
-git clone https:
+git clone https:https://github.com/Mhathewsy/Projeto_Fomulario.git
 
 
 
