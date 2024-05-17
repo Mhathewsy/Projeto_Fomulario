@@ -2,11 +2,15 @@
 Introdução
 Este projeto consiste em um formulário desenvolvido em Angular que permite ao usuário inserir informações pessoais, incluindo nome completo, data de nascimento, CPF, e-mail, telefone e CEP. Ao inserir o CEP, o sistema automaticamente preenche os campos de logradouro, bairro, cidade e estado.
 
+
+
 Funcionalidades
 Formulário de cadastro com validação de campos.
 Busca automática de informações de endereço a partir do CEP inserido.
 Validação de e-mail e CPF.
 Feedback ao usuário sobre a validade do formulário.
+
+
 
 Pré-requisitos
 Node.js: É necessário ter o Node.js instalado na máquina. Você pode baixá-lo em nodejs.org.
@@ -14,9 +18,13 @@ Angular CLI: O projeto foi desenvolvido utilizando o Angular CLI. Certifique-se 
 IDE: Recomenda-se utilizar uma IDE como Visual Studio Code para desenvolvimento. Você pode baixá-lo em code.visualstudio.com.
 Navegador Web: Um navegador web compatível, como Google Chrome ou Mozilla Firefox.
 
+
+
 Instalação
 Clone o repositório do projeto em sua máquina local: 
-git clone https://github.com/seu-usuario/projeto-formulario-angular.git
+git clone https:
+
+
 
 Navegue até o diretório do projeto:
 cd projeto-formulario-angular
@@ -24,13 +32,19 @@ cd projeto-formulario-angular
 Instale as dependências do projeto:
 npm install
 
+
+
 Executando o Projeto
 Após instalar as dependências, execute o seguinte comando para iniciar o servidor de desenvolvimento:
 
 ng serve
 
+
+
 Abra seu navegador e vá para o seguinte endereço:
 http://localhost:4200/
+
+
 
 Estrutura do Projeto
 O projeto está estruturado da seguinte forma:
